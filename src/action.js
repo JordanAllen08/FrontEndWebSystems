@@ -1,8 +1,9 @@
 export const Action = Object.freeze({
     LoadMemories: 'LoadMemories',
-    finishAddingNote: 'FinishAddingNote',
+    FinishAddingNote: 'FinishAddingNote',
     EnterEditMode: 'EnterEditMode',
     LeaveEditMode: 'LeaveEditMode',
+    FinishSavingNote: 'FinishSavingNote',
 });
  
 export function loadMemories(memories){
@@ -28,7 +29,14 @@ export function leaveEditMode(note){
 
 export function finishAddingNote(note){
     return{
-        type: Action.finishAddingNote,
+        type: Action.FinishAddingNote,
+        payload: note,
+    };
+}
+
+export function finishSavingNote(note){
+    return{
+        type: Action.FinishSavingNote,
         payload: note,
     };
 }
@@ -83,3 +91,26 @@ export function startAddingNote(year, month, day){
         .catch(e=> console.error(e));
         };
     }
+
+
+    export function startSavingNote(note){
+        const options = {
+            method:'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(note),
+        }
+
+        return dispatch => {
+        fetch(`${host}/notes/${note.id}`, options)
+            .then(checkForErrors)
+            .then(response => response.json())
+            .then(data => {
+                 if(data.ok) {
+                    dispatch(finishSavingNote(note));
+                    }
+                })
+            .catch(e=> console.error(e));
+            };
+        }
