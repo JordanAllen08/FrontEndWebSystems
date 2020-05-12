@@ -1,12 +1,28 @@
 export const Action = Object.freeze({
     LoadMemories: 'LoadMemories',
     finishAddingNote: 'FinishAddingNote',
+    EnterEditMode: 'EnterEditMode',
+    LeaveEditMode: 'LeaveEditMode',
 });
  
 export function loadMemories(memories){
     return{
         type: Action.LoadMemories, 
         payload: memories,
+    };
+}
+
+export function enterEditMode(note){
+    return{
+        type: Action.EnterEditMode,
+        payload: note,
+    };
+}
+
+export function leaveEditMode(note){
+    return{
+        type: Action.LeaveEditMode,
+        payload: note,
     };
 }
 

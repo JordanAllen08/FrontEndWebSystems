@@ -17,9 +17,35 @@ function reducer(state = initialState, action) {
             ...state,
             memories: [action.payload, ...state.memories],
         }; 
+
+    case Action.EnterEditMode:
+         return {
+            ...state,
+            memories: state.memories.map(memory => {
+                if(memory.id === action.payload.id){
+                    return{...memory, isEditing: true};
+                } else {
+                    return memory;
+                }
+            }),
+            };     
+
+            case Action.LeaveEditMode:
+                return {
+                   ...state,
+                   memories: state.memories.map(memory => {
+                       if(memory.id === action.payload.id){
+                           return{...memory, isEditing: undefined};
+                       } else {
+                           return memory;
+                       }
+                   }),
+                   };  
     default:
         return state;
     }
+
+    
 }
 
 export default reducer;
