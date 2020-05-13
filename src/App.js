@@ -17,16 +17,18 @@ function App(){
     const dispatch = useDispatch();
 
 
-
+/*
     useEffect(() => {
     dispatch(loadNote(month, day));
     }, [dispatch]);
+*/
 
-/*
+
+
 useEffect(() => {
     dispatch(loadNote(8, 16));
     }, [dispatch]);
-*/
+
 
     const addNote = () => {
         dispatch(startAddingNote(year, month, day));
