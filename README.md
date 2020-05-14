@@ -1,5 +1,5 @@
 # FrontEndWebSystems
-*Notes and drawing app for class
+*To-do list
 -Did todo List idea as alot of rescources are around.
 Also todo List is a starter Redux program so alot of trouble shooting issues can be solved with the help of online rescources!
 
