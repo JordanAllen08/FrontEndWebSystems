@@ -1,5 +1,6 @@
 import { VisibilityFilters } from '../actions';
 
+//state by default shows all information
 const visibilityFilter = (state = VisibilityFilters.SHOW_ALL, action) => {
     switch (action.type){
         case 'SET_VISIBILITY_FILTER':
