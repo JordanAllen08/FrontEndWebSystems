@@ -1,5 +1,7 @@
 # FrontEndWebSystems
 *Notes and drawing app for class
+-Did todo List idea as alot of rescources are around.
+Also todo List is a starter Redux program so alot of trouble shooting issues can be solved with the help of online rescources!
 
 Start:
   cd to-dolist
@@ -12,7 +14,7 @@ CLIENT
 *cross out previous to-do's
 *Style to-do List
 
-CONNECTION / SERVER (hard part)
+CONNECTION / SERVER
 *Set up database for to-do list
 *link database for to-do list
 *send new todo's to the database

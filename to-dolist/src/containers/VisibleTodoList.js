@@ -22,15 +22,17 @@ const getVisibleTodos = (todos, filter) => {
     }
 }
 
+//passed from visibility Filter and goes to actions index.js
 const mapStateToProps = state => ({
     todos: getVisibleTodos(state.todos, state.visibilityFilter)
 });
 
-/*
-const mapDispatchToProps = dispatch => (
+//prop passing I have been saving!
+//used in toggle todo
+const mapDispatchToProps = dispatch => ({
     toggleTodo: id => dispatch(toggleTodo(id))
-);
-*/
+});
+
 
 export default connect(
     mapStateToProps
