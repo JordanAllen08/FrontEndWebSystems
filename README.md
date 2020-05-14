@@ -4,8 +4,8 @@
 Also todo List is a starter Redux program so alot of trouble shooting issues can be solved with the help of online rescources!
 
 Start:
-  cd to-dolist
-  npm start
+  --cd to-dolist--
+  --npm start--
   
 -Planning a simple todo list application
 CLIENT
