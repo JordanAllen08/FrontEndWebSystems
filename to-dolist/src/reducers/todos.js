@@ -16,6 +16,7 @@ const todos = (state = [], action) => {
                     todo.id === action.id ? {...todo, completed: !todo.completed} : todo
                     );
 
+            //returns default state value
             default:
                 return state;
     }

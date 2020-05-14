@@ -2,7 +2,9 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
 
+//form for To-do List application
 
+//Add button
 const AddTodo = ({ dispatch }) => {
     let input;
 
@@ -13,19 +15,28 @@ const AddTodo = ({ dispatch }) => {
                 e => {
                     e.preventDefault();
                 
-
+                //check if input is nonexistent
                 if(!input.value.trim()){
                     return
                 }
 
+                // test input value 
+                //input.value='type item here';
+
+                //dispatches values entered to text box
                 dispatch(addTodo(input.value));
+
+                //resets input so it appear null instead of previous text
                 input.value='';
+
+                //Below is the button creation of the form
             }
 
         }
     >
+                
                 <input type="text" ref={el => (input = el)} />
-                <button type='submit'>Add Todo</button>
+                <button type='submit'>Submit Item</button>
             </form>
         </div>
     );

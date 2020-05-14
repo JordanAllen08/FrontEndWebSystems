@@ -10,8 +10,12 @@ Start:
 -Planning a simple todo list application
 CLIENT
 *create new to-do's  - Done
-*Add to the list of to-do's
-*cross out previous to-do's
+*Add to the list of to-do's - Done
+*cross out previous to-do's - Done
+*Button to filter completed tasks
+*Button to filter Active tasks
+*Button to return to ALL default state - Done
+
 *Style to-do List
 
 CONNECTION / SERVER

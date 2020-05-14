@@ -1,3 +1,8 @@
+/*
+Actions to pass and maintain whats going on
+--note highly connected to reducers/todos.js
+*/
+
 let nextTodoId = 0;
 
 export const addTodo = text => ({
@@ -17,4 +22,9 @@ export const VisibilityFilters = {
 export const toggleTodo = id => ({
     type: 'TOGGLE_line',
     id
+});
+
+export const setVisibilityFilter = filter => ({
+    type: 'SET_VISIBILITY_FILTER',
+    filter
 });

@@ -1,5 +1,5 @@
 import {connect} from 'react-redux';
-import { VisibilityFilters } from '../actions'
+import { VisibilityFilters, toggleTodo } from '../actions'
 import TodoList from '../component/TodoList';
 
 
@@ -34,6 +34,8 @@ const mapDispatchToProps = dispatch => ({
 });
 
 
+//connects properties to TodoList, mapDispatchToProps used for toggle_line
 export default connect(
-    mapStateToProps
+    mapStateToProps,
+    mapDispatchToProps
 )(TodoList);
