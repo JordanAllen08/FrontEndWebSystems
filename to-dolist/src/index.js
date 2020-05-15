@@ -11,7 +11,7 @@ import rootReducer from './reducers'
 
 const store = createStore(rootReducer);
 
-
+//Acts as store for out redux states
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={ store }>
