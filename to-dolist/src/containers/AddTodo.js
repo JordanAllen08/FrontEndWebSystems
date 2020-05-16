@@ -35,8 +35,8 @@ const AddTodo = ({ dispatch }) => {
         }
     >
                 
-                <input type="text" class='textbox' ref={el => (input = el)} />
-                <button type='submit' class='btnsub'>Submit Item</button>
+                <input type="text" className='textbox' ref={el => (input = el)} />
+                <button type='submit' className='btnsub'>Submit Item</button>
             </form>
         </div>
     );

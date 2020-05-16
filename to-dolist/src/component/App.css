@@ -4,9 +4,15 @@
 
 h1{
   color: #255C99;
+  -webkit-text-stroke-width: 1px; 
+  -webkit-text-stroke-color: black; 
 }
 
 p{
+  color: #255C99;
+}
+
+span{
   color: #255C99;
 }
 
