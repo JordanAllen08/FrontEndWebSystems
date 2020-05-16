@@ -1,5 +1,6 @@
 import React from 'react';
 import Todo from './Todo';
+//import {useDispatch} from 'react-redux';
 
 //todo list where we pass the props
 const TodoList = ({todos, toggleTodo}) => (
@@ -10,6 +11,14 @@ const TodoList = ({todos, toggleTodo}) => (
     </ul>
 );
 
+/*
+export function todos(props) {
+const todos= props.todo;
+const dispatch = useDispatch();
+}
+
+
+*/
 
 
 

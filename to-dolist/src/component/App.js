@@ -11,6 +11,14 @@ import './App.css'
 //<AddTodo /> is user entry and submit button
 
 const App = () => (
+    /*
+        useEffect(() => {
+           dispatch(loadtodo(id)); 
+        }, [dispatch]);
+
+    */
+
+
     <div>
         <h1>Welcome to the To-do List Application</h1>
         <p>Type your todo's and submit when done click on them!</p>

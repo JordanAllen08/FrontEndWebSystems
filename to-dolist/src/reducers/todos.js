@@ -16,7 +16,29 @@ const todos = (state = [], action) => {
                     todo.id === action.id ? {...todo, completed: !todo.completed} : todo
                     );
 
+            case 'DELETE_TODO':
+                return state.filter(todo => todo.id !== action.id);
+                
+            
+
             //returns default state value
+
+            /*
+             case 'ADD_OLD_TODO':
+            return [
+            ...state,
+            {
+                id: action.id,
+                ...state,
+                text: action.payload,
+                
+            }
+            ];
+            */
+
+
+
+
             default:
                 return state;
     }
