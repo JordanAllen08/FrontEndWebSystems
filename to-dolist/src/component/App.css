@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+
+h1{
+  color: #255C99;
+}
+
+p{
+  color: #255C99;
+}
+
+.textbox{
+  border: 2px solid #5280B3 !important;
+  border-radius: 5px !important;
+}
+
+
+.btnsub{
+  margin: 10px;
+  padding: 10px;
+}
+
+li{
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  list-style-type: none;
+}
+
+button{
+  border-radius: 12px !important;
+  border-color: black;
+  background-color: #5280B3;
+}
+
+
+body {
+  background-color: #262626;
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
+}
+
+
