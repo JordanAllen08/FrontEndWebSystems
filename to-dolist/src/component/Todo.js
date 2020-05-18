@@ -1,5 +1,6 @@
 import React from 'react';
 
+//what happens upon clicking!
 //This is where our tasks are created
 const Todo = ({onClick, completed, text}) => (
     <li 

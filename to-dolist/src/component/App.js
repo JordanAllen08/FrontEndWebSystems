@@ -4,23 +4,23 @@ import VisibleTodoList from '../containers/VisibleTodoList';
 import Footer from './Footer';
 import './App.css'
 
-//Add CSS file here?
 
 
 //decided whats displayed on HTML
 //<AddTodo /> is user entry and submit button
 
 const App = () => (
+    //attmpted to get SQL database online with App.js
+  
     /*
         useEffect(() => {
            dispatch(loadtodo(id)); 
         }, [dispatch]);
 
     */
-
-
+   //Whats called for when displaying to redux application
     <div>
-        <h1>Welcome to the To-do List Application</h1>
+        <h1>Welcome to the To-Do List Application</h1>
         <p>Type your todo's and submit when done click on them!</p>
         <AddTodo />
         <VisibleTodoList />

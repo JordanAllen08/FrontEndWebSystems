@@ -28,8 +28,6 @@ export const deleteTodo = id =>{
     }
 }
 
-
-
 /*
 export function loadTo-dos(text){
     return{

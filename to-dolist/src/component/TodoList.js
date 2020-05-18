@@ -11,6 +11,7 @@ const TodoList = ({todos, toggleTodo}) => (
     </ul>
 );
 
+//reminece of trying to get dispatch to work for SQL
 /*
 export function todos(props) {
 const todos= props.todo;

@@ -2,7 +2,7 @@ import React from 'react';
 import FilterLink from '../containers/FilterButton';
 import { VisibilityFilters } from '../actions';
 
-
+//Filters what action is set to
 //displayed from ./component/App.js
 const Footer = () => (
     <div>
